@@ -1,0 +1,184 @@
+################################### Default Configuration ############################
+baseURL = "/"
+languageCode = "en-us"
+title = "Site Title"
+[permalinks]
+
+#################################### Plugins ##########################################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+#  [[params.plugins.css]]
+#  URL = "plugins/venobox/venobox.css"
+  [[params.plugins.css]]
+  URL = "plugins/card-slider/css/style.css"
+  [[params.plugins.css]]
+  URL = "https://unpkg.com/aos@2.3.1/dist/aos.css"
+ # [[params.plugins.css]]
+ # URL = "https://vjs.zencdn.net/5.4.6/video-js.min.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+#  [[params.plugins.js]]
+#  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/shuffle/shuffle.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/counto/apear.js"
+  [[params.plugins.js]]
+  URL = "plugins/counto/counTo.js"
+  [[params.plugins.js]]
+  URL = "plugins/card-slider/js/card-slider-min.js"
+  [[params.plugins.js]]
+  URL = "https://unpkg.com/aos@2.3.1/dist/aos.js"
+#  [[params.plugins.js]]
+#  URL = "https://vjs.zencdn.net/7.11.4/video.min.js"
+#  [[params.plugins.js]]
+#  URL = "https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.0/Youtube.min.js"
+#  [[params.plugins.js]]
+#  URL = "plugins/google-map/gmap.js"
+
+
+###################################### Navigation ######################################
+[menu]
+    
+  [[menu.main]]
+  name = "Our Vision"
+  URL = "/our_vision/"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Services"
+  weight = 3
+  hasChildren = true
+    
+    [[menu.main]]
+    parent = "Services"
+    name = "Strategy Session"
+    URL = "/strategy-session/"
+    weight = 1
+
+    [[menu.main]]
+    parent = "Services"
+    name = "4V Plus+"
+    URL = "/4vplus/"
+    weight = 3
+    
+#    [[menu.main]]
+#    parent = "Services"
+#    name = "4V Films"
+#    URL = "/4vfilms/"
+    
+    [[menu.main]]
+    parent = "Services"
+    name = "Digital Impact Accelerator"
+    URL = "/digital_impact_accelerator/"
+    weight = 2
+  
+  [[menu.main]]
+  name = "Projects"
+  URL = "/projects/"
+  weight = 4
+  
+  [[menu.main]]
+  name = "Testimonials"
+  URL = "testimonials"
+  weight = 5
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "/blog/"
+  weight = 6
+
+  #[[menu.main]]
+  #name = "pages"
+  #weight = 7
+  #hasChildren = true
+
+    #[[menu.main]]
+    #parent = "pages"
+    #name = "Team"
+    #URL = "team"
+    
+    #[[menu.main]]
+    #parent = "pages"
+    #name = "Blog"
+    #URL = "blog"
+    
+    #[[menu.main]]
+    #parent = "pages"
+    #name = "Career"
+    #URL = "career"
+    
+    #[[menu.main]]
+    #parent = "pages"
+    #name = "FAQs"
+    #URL = "faqs"
+
+    #[[menu.main]]
+    #parent = "pages"
+    #name = "Pricing"
+    #URL = "pricing"
+  
+
+  ############################# Footer menu ################################
+  [[menu.footer]]
+  name = "About"
+  URL = "about"
+  weight = 2
+  
+  [[menu.footer]]
+  name = "Service"
+  URL = "service"
+  weight = 3
+  
+  [[menu.footer]]
+  name = "Portfolio"
+  URL = "portfolio"
+  weight = 4
+  
+  [[menu.footer]]
+  name = "Contact"
+  URL = "contact"
+  weight = 5
+
+
+
+########################### Default parameters ##########################
+[params]
+logo = "images/4V-FILMS-LOGO-BLUE.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Amjad Rathod"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+
+  ############################# Footer Start ###########################
+
+  # footer about
+  [params.footer.about]
+  about = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, odit? Sapiente et temporibus qui corporis veritatis ipsa culpa, numquam id."
+
+  # contact form
+  [params.form]
+  formAction = "#"
+
+  # copyright
+  [params.copyright]
+  copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
